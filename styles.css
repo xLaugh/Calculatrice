@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.dark-theme .calculator {
+    background-color: #444;
+}
+
+.display input {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.light-theme button {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.dark-theme button {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.operator {
+    background-color: #e0e0e0;
+}
+
+.dark-theme .operator {
+    background-color: #666;
+}
+
+.equals {
+    background-color: #4285f4;
+    color: white;
+}
+
+.dark-theme .equals {
+    background-color: #1a73e8;
+}
+
+#theme-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #1a73e8;
+}
